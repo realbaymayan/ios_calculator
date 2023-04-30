@@ -13,114 +13,157 @@
         <div class="box">
             <div class="numbers">
                  <div class="sonuc">
-                    1432
+                    
                  </div>
             </div>
             <div class="button-container">
                 <div  class="buttons">
                     <div class="items">
-                        AC
+                        <button onclick="ClearText()">
+                            AC
+                        </button>
                     </div>
                 </div>
                 <div  class="buttons">
                     <div class="items">
-                        +/-
+                        <button>
+                            +/-
+                        </button>
                     </div>
                 </div>
                 <div  class="buttons">
                     <div class="items">
-                        %
+                        <button>
+                            %
+                        </button>
                     </div>
                 </div>
                 <div style="background-color: orange;" class="buttons">
                     <div class="items">
-                        /
+                        <button>
+                            /
+                        </button>
                     </div>
                 </div>
-                <div style="background-color: #333333;" class="buttons btn7" onclick="trigger(123123)">
+                <div style="background-color: #333333;" class="buttons btn7">
                     <div class="items">
+                     <button onclick="showAlert(this)">
                         7
+                     </button>
                     </div>
                 </div>
                 <div style="background-color: #333333;" class="buttons">
                     <div class="items">
-                        8
+                        <button onclick="showAlert(this)">
+                            8
+                        </button>
                     </div>
                 </div>
                 <div style="background-color: #333333;" class="buttons">
                     <div class="items">
-                        9
+                        <button onclick="showAlert(this)">
+                            9
+                        </button>
                     </div>
                 </div>
                 <div style="background-color: orange;" class="buttons">
                     <div class="items">
-                        x
+                        <button>
+                            x
+                        </button>
                     </div>
                 </div>
                 <div style="background-color: #333333;" class="buttons">
                     <div class="items">
-                        4
+                        <button onclick="showAlert(this)">
+                            4
+                        </button>
                     </div>
                 </div>
                 <div style="background-color: #333333;" class="buttons">
                     <div class="items">
-                        5
+                        <button onclick="showAlert(this)">
+                            5
+                        </button>
                     </div>
                 </div>
                 <div style="background-color: #333333;" class="buttons">
                     <div class="items">
-                        6
+                        <button onclick="showAlert(this)">
+                            6
+                        </button>
                     </div>
                 </div>
                 <div style="background-color: orange;" class="buttons">
                     <div class="items">
-                        -
+                        <button >
+                            -
+                        </button>
                     </div>
                 </div>
                 <div style="background-color: #333333;" class="buttons">
                     <div class="items">
-                        1
+                        <button onclick="showAlert(this)">
+                            1
+                        </button>
                     </div>
                 </div>
                 <div style="background-color: #333333;" class="buttons">
                     <div class="items">
-                        2
+                        <button onclick="showAlert(this)">
+                            2
+                        </button>
                     </div>
                 </div>
                 <div style="background-color: #333333;" class="buttons">
                     <div class="items">
-                        3
+                        <button onclick="showAlert(this)">
+                            3
+                        </button>
                     </div>
                 </div>
                 <div style="background-color: orange;" class="buttons">
                     <div class="items">
-                        +
+                        <button>
+                            +
+                        </button>
                     </div>
                 </div>
                 <div style="width: 167px; background-color: #333333;"  class="buttons">
                     <div class="items">
-                        0
+                        <button style="width: 167px;" onclick="showAlert(this)">
+                            0
+                        </button>
                     </div>
                 </div>
                 <div style="background-color: #333333;" class="buttons">
                     <div class="items">
-                        ,
+                        <button>
+                            ,
+                        </button>
                     </div>
                 </div>
                 <div style="background-color: orange;" class="buttons">
                     <div class="items">
-                        =
+                        <button>
+                            =
+                        </button>
                     </div>
                 </div>
             </div>
             
         </div>
     </div>
-    
+    <script>
+        function showAlert(button){
+            var text =button.textContent;
+            var sonucDiv = document.querySelector('.sonuc');
+            sonucDiv.innerHTML = text;
+        }
+        function ClearText() {
+            var sonucDiv = document.querySelector('.sonuc');
+            sonucDiv.innerHTML = '';
+        }
+    </script>
 </body>
-<script>
-    function sayiata(sayi){
-    console.log(sayi)
-}
-</script>
 </html>
