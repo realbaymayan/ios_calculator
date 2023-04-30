@@ -1,0 +1,52 @@
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box{
+    background-color: black;
+    height: 78vh;
+    width: 45vw;
+    border-radius: 20px;
+    width: 380px;
+}
+.numbers{
+    background-color: transparent;
+    height: 27vh;
+    border-radius: 20px 20px 0px 0px ;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+
+}
+.buttons{
+    height: 71px;
+    width: 71px;
+    border-radius: 100px;
+    background-color: gray;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    float: left;
+    color: black;
+    font-size: 60px;
+    text-align: center;
+}
+.items {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+.sonuc{
+    color: white;
+    width: 100%;
+    text-align: right;
+        vertical-align: bottom;
+    font-size: 45px;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
